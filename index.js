@@ -23,7 +23,7 @@ map.on('click', function(e) {
     ]
     
 }).on('routesfound',function(e){
-   
+    console.log(e);
     e.routes[0].coordinates.forEach(function(coord,index){
         setTimeout(()=>{
             marker.setLatLng([coord.lat,coord.lng])
